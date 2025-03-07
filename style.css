@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #121212;
-  color: #ffffff;
+  background-color: #1a1a2e;
+  color: #e6e6e6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,9 +19,9 @@ body {
   position: relative;
   width: 600px;
   height: 600px;
-  border: 2px solid #333;
+  border: 2px solid #16213e;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  background-color: #000;
+  background-color: #0f3460;
 }
 
 #game-canvas {
@@ -47,7 +47,7 @@ body {
   display: flex;
   gap: 20px;
   font-size: 18px;
-  color: #fff;
+  color: #e6e6e6;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -61,19 +61,19 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(15, 52, 96, 0.9);
   pointer-events: auto;
 }
 
 #game-menu h1, #game-over h2, #pause-menu h2 {
   font-size: 48px;
   margin-bottom: 30px;
-  color: #4CAF50;
-  text-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+  color: #e94560;
+  text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #e94560;
   color: white;
   border: none;
   padding: 12px 24px;
@@ -86,7 +86,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #c73e54;
   transform: scale(1.05);
 }
 
@@ -101,13 +101,13 @@ button:hover {
 }
 
 .difficulty-btn {
-  background-color: #333;
+  background-color: #16213e;
   padding: 8px 16px;
   margin: 0 5px;
 }
 
 .difficulty-btn.selected {
-  background-color: #4CAF50;
+  background-color: #e94560;
 }
 
 .hidden {

@@ -39,7 +39,7 @@ export class SoundManager {
     // since we can't load external audio files in this environment
   }
 
-  playSound(type, options = {}) {
+  playSound(soundType, options = {}) {
     if (this.muted || !this.audioContext) return;
     
     const ctx = this.audioContext;
@@ -56,11 +56,11 @@ export class SoundManager {
     // Set default values
     let duration = options.duration || 0.1;
     let frequency = options.frequency || 440;
-    let type = options.type || 'sine';
+    let oscillatorType = options.type || 'sine';
     let volume = options.volume || 0.5;
     
     // Configure oscillator
-    oscillator.type = type;
+    oscillator.type = oscillatorType;
     oscillator.frequency.setValueAtTime(frequency, currentTime);
     
     if (options.frequencyEnd) {

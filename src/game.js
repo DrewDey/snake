@@ -274,7 +274,7 @@ export class Game {
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
     
     // Draw background
-    this.ctx.fillStyle = '#111';
+    this.ctx.fillStyle = '#0f3460';
     this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
     
     // Draw grid
@@ -289,7 +289,7 @@ export class Game {
   }
 
   drawGrid() {
-    this.ctx.strokeStyle = '#222';
+    this.ctx.strokeStyle = '#16213e';
     this.ctx.lineWidth = 1;
     
     // Draw vertical lines
@@ -313,7 +313,7 @@ export class Game {
     if (!this.snake) return;
     
     // Draw snake body
-    this.ctx.fillStyle = '#4CAF50';
+    this.ctx.fillStyle = '#e94560';
     for (let i = 1; i < this.snake.body.length; i++) {
       const segment = this.snake.body[i];
       this.ctx.fillRect(
@@ -326,7 +326,7 @@ export class Game {
     
     // Draw snake head
     const head = this.snake.body[0];
-    this.ctx.fillStyle = '#8BC34A';
+    this.ctx.fillStyle = '#ff758f';
     this.ctx.fillRect(
       head.x * this.gridSize,
       head.y * this.gridSize,
@@ -335,7 +335,7 @@ export class Game {
     );
     
     // Draw eyes
-    this.ctx.fillStyle = '#111';
+    this.ctx.fillStyle = '#0f3460';
     const eyeSize = this.gridSize / 5;
     const eyeOffset = this.gridSize / 3;
     
@@ -377,7 +377,7 @@ export class Game {
     if (!this.food) return;
     
     // Draw food
-    this.ctx.fillStyle = '#F44336';
+    this.ctx.fillStyle = '#00f5d4';
     this.ctx.beginPath();
     this.ctx.arc(
       this.food.position.x * this.gridSize + this.gridSize / 2,

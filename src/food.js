@@ -6,7 +6,7 @@ export class Food {
     this.position = this.getRandomPosition();
     this.value = 1;
     this.type = 'normal'; // normal, bonus, special
-    this.color = '#F44336'; // red for normal food
+    this.color = '#00f5d4'; // teal for normal food
   }
 
   getRandomPosition() {
@@ -45,15 +45,15 @@ export class Food {
     if (Math.random() < 0.2) {
       this.type = 'bonus';
       this.value = 3;
-      this.color = '#FFC107'; // yellow for bonus food
+      this.color = '#fee440'; // yellow for bonus food
     } else if (Math.random() < 0.05) {
       this.type = 'special';
       this.value = 5;
-      this.color = '#9C27B0'; // purple for special food
+      this.color = '#9b5de5'; // purple for special food
     } else {
       this.type = 'normal';
       this.value = 1;
-      this.color = '#F44336'; // red for normal food
+      this.color = '#00f5d4'; // teal for normal food
     }
   }
 
