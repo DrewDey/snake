@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Snake Game</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="game-container">
+    <div id="game-ui">
+      <div id="score-container">
+        <div>Score: <span id="score">0</span></div>
+        <div>High Score: <span id="high-score">0</span></div>
+        <div>Level: <span id="level">1</span></div>
+      </div>
+      <div id="game-menu">
+        <h1>Advanced Snake</h1>
+        <button id="start-button">Start Game</button>
+        <div class="difficulty">
+          <span>Difficulty:</span>
+          <button class="difficulty-btn selected" data-speed="150">Easy</button>
+          <button class="difficulty-btn" data-speed="100">Medium</button>
+          <button class="difficulty-btn" data-speed="70">Hard</button>
+        </div>
+      </div>
+      <div id="game-over" class="hidden">
+        <h2>Game Over!</h2>
+        <p>Your score: <span id="final-score">0</span></p>
+        <button id="restart-button">Play Again</button>
+      </div>
+      <div id="pause-menu" class="hidden">
+        <h2>Game Paused</h2>
+        <button id="resume-button">Resume</button>
+      </div>
+    </div>
+    <canvas id="game-canvas"></canvas>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
